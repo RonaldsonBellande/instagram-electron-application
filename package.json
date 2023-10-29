@@ -1,0 +1,38 @@
+{
+  "name": "instagram-electron",
+  "appId": "com.instagram.ronaldsonbellande.${name}",
+  "productName": "Instagram",
+  "version": "2.0.0",
+  "description": "A Linux desktop web app for Instagram",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --publish never"
+  },
+  "build": {
+    "asar": false,
+    "linux": {
+      "target": [
+        "zip",
+        "AppImage"
+      ],
+      "category": "Entertainment",
+      "artifactName": "${name}_${version}_linux.${ext}"
+    },
+    "extraFiles": [
+      "com.instagram.ronaldsonbellande.${name}.desktop"
+    ]
+  },
+  "repository": "https://instagram.com/ronaldsonbellande/instagram-electron",
+  "keywords": [
+    "Electron",
+    "instagram",
+    "Instagram"
+  ],
+  "author": "Ronaldson Bellande <ronaldsonbellande@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  }
+}

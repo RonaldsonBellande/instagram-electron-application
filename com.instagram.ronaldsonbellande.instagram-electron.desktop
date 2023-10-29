@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Instagram
+Comment=entertainment services with instagram
+Comment[ro]=entertainment services with instagram
+Type=Application
+Exec=/opt/instagram-electron/instagram-electron
+Icon=instagram
+StartupWMClass=instagram
+Categories=Network;Entertainment
+Keywords=Entertainment;Streaming;Instagram;instagram;YT
+Keywords[ro]=Entertainment;Streaming
